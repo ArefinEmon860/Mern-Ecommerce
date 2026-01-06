@@ -92,11 +92,6 @@ const placeOrderStripe = async(req,res) =>{
           res.json({success: false, message: error.message})
     }
 }
-
-//Placing Orders Using Razorpay Method
-const placeOrderRazorpay = async(req,res) =>{
-
-}
 // Verify Stripe
 const verifyStripe = async (req,res) =>{
     const {orderId, success, userId} = req.body
